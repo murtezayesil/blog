@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Ali Murteza Yesil</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Test - Chapter 1</a></li><li class="expanded "><a href="chapter_2.html"><strong aria-hidden="true">2.</strong> Test - Chapter 2</a></li><li class="spacer"></li><li class="expanded affix "><a href="faq.html">Not very FAQ</a></li><li class="expanded affix "><a href="license.html">Licence</a></li><li class="expanded affix "><a href="LICENSE.html">LICENSE.md</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Ali Murteza Yesil</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#chapter-1" id="chapter-1">Chapter 1</a></h1>
+<p>This is a test. Ok?</p>
+<h1><a class="header" href="#chapter-1-1" id="chapter-1-1">Chapter 1</a></h1>
+<p>This is a test. Ok?</p>
+<h1><a class="header" href="#not-very-faq" id="not-very-faq">Not very FAQ</a></h1>
+<blockquote>
+<p>Why is it called &quot; FAQ&quot;? </summary></p>
+<blockquote>
+<p>I have recently started blogging and wanted to try mdBook's capabilities by writing an FAQ page. In case people get questions about this blog, I want some of them are be pre-answered.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>This blog looks great 🙂️ Which CMS and theme do you use?</p>
+<blockquote>
+<p>Not powered by a CMS. This page is built using <em><a href="https://github.com/rust-lang/mdbook">mdBook</a>.</em></p>
+</blockquote>
+</blockquote>
+<details>
+    <summary> Why use <b>mdBook</b>, an online book creation tool, while there are CMSs that specializes on Blogging ? </summary>
+    <p>
+        1. CMSs are overkill for my needs
+    </p>
+    <p>
+        2. I don't want to run a software that will require updating time to time.
+    </p>
+    <p>
+        3. I <b>feel</b> like CMSs are vendor locking in some way. Many of them require creating account to use their tools. I am not saying that is not fair, it is their platform after all. I don't want one more online account for something I don't need.
+    </p>
+    <p>
+        4. CMSs usually embed "innocent" trackers to count visits. I don't care about how many people read my articles. I would rather have meaningful conversation in social media than seeing visitor numbers go up.
+    </p>
+</details>
+<h3><a class="header" href="#glossary" id="glossary">Glossary</a></h3>
+<p><a href="https://en.wikipedia.org/wiki/Content_management_system">CMS</a> : Content Management System</p>
+<p><a href="https://en.wikipedia.org/wiki/Markdown">MarkDown</a> : Simple markup language that is easy-to-write and easy-to-read.</p>
+<p><a href="https://en.wikipedia.org/wiki/HTML">HTML</a> : Markup Language that tells your browser what should be displayed on the screen. It tells everything to your computer from where should be the Search button to what should be the background color, from the title of the page to size of each and every text. Read this page's source to go &quot;Hmm, so this is how it works!&quot;</p>
+<h1><a class="header" href="#license-information" id="license-information">License Information</a></h1>
+<p>All of the content on this site is produced under the Creative Commons Attribution – Share Alike 4.0 License (unless otherwise stated), which means the following:</p>
+<ul>
+<li>You are free to share, copy and redistribute the material in any medium or format.</li>
+<li>You are also free to adapt, remix, transform, and build upon the material for any purpose, even commercially. However…</li>
+<li>You must provide attribution to the author (me) with a link back to this website. An example attribution is below.</li>
+<li>If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</li>
+<li>You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</li>
+</ul>
+<h2><a class="header" href="#attribution-example" id="attribution-example">Attribution Example</a></h2>
+<p>An acceptable attribution license would be something similar to the following:</p>
+<blockquote>
+<p>Credit to <a href="https://github.com/murtezayesil">Ali Murteza Yesil</a> for the original work.</p>
+</blockquote>
+<p>With the plain text HTML looking like the following:</p>
+<pre><code>Credit to &lt;a href=&quot;https://murtezayesil.me&quot;&gt;Ali Murteza Yesil&lt;/a&gt; for the original work.
+</code></pre>
+<h1><a class="header" href="#all-work-licensed-under-img-srcimgcc_by-sapng-altcc-by-sa--unless-otherwise-stated" id="all-work-licensed-under-img-srcimgcc_by-sapng-altcc-by-sa--unless-otherwise-stated">All work licensed under <img src="img/CC_BY-SA.png" alt="CC BY-SA" /> unless otherwise stated.</a></h1>
+<p>Credit to <a href="https://kevq.uk">Kev Quirk</a> for the original work.</p>
+<h1><a class="header" href="#creative-commons-attribution-sharealike-40-international-public-license" id="creative-commons-attribution-sharealike-40-international-public-license">Creative Commons Attribution-ShareAlike 4.0 International Public License</a></h1>
+<p>By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (&quot;Public License&quot;). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.</p>
+<h2><a class="header" href="#section-1--definitions" id="section-1--definitions">Section 1 – Definitions.</a></h2>
+<p>a. <strong>Adapted Material</strong> means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.</p>
+<p>b. <strong>Adapter's License</strong> means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.</p>
+<p>c. <strong>BY-SA Compatible License</strong> means a license listed at <a href="creativecommons.org/compatiblelicenses">creativecommons.org/compatiblelicenses</a>, approved by Creative Commons as essentially the equivalent of this Public License.</p>
+<p>d. <strong>Copyright and Similar Rights</strong> means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s2b">2(b)(1)-(2)</a> are not Copyright and Similar Rights.</p>
+<p>e. <strong>Effective Technological Measures</strong> means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.</p>
+<p>f. <strong>Exceptions and Limitations</strong> means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.</p>
+<p>g. <strong>License Elements</strong> means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.</p>
+<p>h. <strong>Licensed Material</strong> means the artistic or literary work, database, or other material to which the Licensor applied this Public License.</p>
+<p>i. <strong>Licensed Rights</strong> means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.</p>
+<p>j. <strong>Licensor</strong> means the individual(s) or entity(ies) granting rights under this Public License.</p>
+<p>k. <strong>Share</strong> means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.</p>
+<p>l. <strong>Sui Generis Database Rights</strong> means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.</p>
+<p>m. <strong>You</strong> means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.</p>
+<h2><a class="header" href="#section-2--scope" id="section-2--scope">Section 2 – Scope.</a></h2>
+<ol>
+<li><strong>License grant</strong>.
+<ol>
+<li>Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:
+<ol>
+<li>reproduce and Share the Licensed Material, in whole or in part; and</li>
+<li>produce, reproduce, and Share Adapted Material.</li>
+</ol>
+</li>
+<li><em>Exceptions and Limitations</em>. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.</li>
+<li><em>Term</em>. The term of this Public License is specified in Section <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s6a">6(a)</a>.</li>
+<li><em>Media and formats; technical modifications allowed</em>. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s2a4">2(a)(4)</a> never produces Adapted Material.</li>
+<li><em>Downstream recipients</em>.
+<ol>
+<li><em>Offer from the Licensor – Licensed Material</em>. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.</li>
+<li><em>Additional offer from the Licensor – Adapted Material</em>. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.</li>
+<li><em>No downstream restrictions</em>. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.</li>
+</ol>
+</li>
+<li><em>No endorsement</em>. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s3a1Ai">3(a)(1)(A)(i)</a>.</li>
+</ol>
+</li>
+<li><strong>Other rights</strong>.
+<ol>
+<li>Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.</li>
+<li>Patent and trademark rights are not licensed under this Public License.</li>
+<li>To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.</li>
+</ol>
+</li>
+</ol>
+<h2><a class="header" href="#section-3--license-conditions" id="section-3--license-conditions">Section 3 – License Conditions.</a></h2>
+<p>Your exercise of the Licensed Rights is expressly made subject to the following conditions.</p>
+<ol>
+<li>Attribution.
+<ol>
+<li>If You Share the Licensed Material (including in modified form), You must:
+<ol>
+<li>retain the following if it is supplied by the Licensor with the Licensed Material:
+<ol>
+<li>identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);</li>
+<li>a copyright notice;</li>
+<li>a notice that refers to this Public License;</li>
+<li>a notice that refers to the disclaimer of warranties;</li>
+<li>a URI or hyperlink to the Licensed Material to the extent reasonably practicable;</li>
+</ol>
+</li>
+<li>indicate if You modified the Licensed Material and retain an indication of any previous modifications; and</li>
+<li>indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.</li>
+</ol>
+</li>
+<li>You may satisfy the conditions in Section <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s3a1">3(a)(1)</a> in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.</li>
+<li>If requested by the Licensor, You must remove any of the information required by Section <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s3a1A">3(a)(1)(A)</a> to the extent reasonably practicable.</li>
+</ol>
+</li>
+<li>ShareAlike.
+In addition to the conditions in Section <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s3a">3(a)</a>, if You Share Adapted Material You produce, the following conditions also apply.
+<ol>
+<li>The Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.</li>
+<li>You must include the text of, or the URI or hyperlink to, the Adapter's License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.</li>
+<li>You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter's License You apply.</li>
+</ol>
+</li>
+</ol>
+<h2><a class="header" href="#section-4--sui-generis-database-rights" id="section-4--sui-generis-database-rights">Section 4 – Sui Generis Database Rights.</a></h2>
+<p>Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:</p>
+<ol>
+<li>for the avoidance of doubt, Section <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s2a1">2(a)(1)</a> grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;</li>
+<li>if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s3b">3(b)</a>; and</li>
+<li>You must comply with the conditions in Section <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s3a">3(a)</a> if You Share all or a substantial portion of the contents of the database.</li>
+</ol>
+<p>For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.</p>
+<h2><a class="header" href="#section-5--disclaimer-of-warranties-and-limitation-of-liability" id="section-5--disclaimer-of-warranties-and-limitation-of-liability">Section 5 – Disclaimer of Warranties and Limitation of Liability.</a></h2>
+<p>**</p>
+<ol>
+<li><strong>Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.</strong></li>
+<li><strong>To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.</strong></li>
+<li>The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.</li>
+</ol>
+<h2><a class="header" href="#section-6--term-and-termination" id="section-6--term-and-termination">Section 6 – Term and Termination.</a></h2>
+<ol>
+<li>This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.</li>
+<li>Where Your right to use the Licensed Material has terminated under Section <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s6a">6(a)</a>, it reinstates:
+<ol>
+<li>automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or</li>
+<li>upon express reinstatement by the Licensor.
+For the avoidance of doubt, this Section 6(b) does not affect   any right the Licensor may have to seek remedies for Your violations of this Public License.</li>
+</ol>
+</li>
+<li>For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.</li>
+<li>Sections <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s1">1</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s5">5</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s6">6</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s7">7</a>, and <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s8">8</a> survive termination of this Public License.</li>
+</ol>
+<h2><a class="header" href="#section-7--other-terms-and-conditions" id="section-7--other-terms-and-conditions">Section 7 – Other Terms and Conditions.</a></h2>
+<ol>
+<li>The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.</li>
+<li>Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.</li>
+</ol>
+<h2><a class="header" href="#section-8--interpretation" id="section-8--interpretation">Section 8 – Interpretation.</a></h2>
+<ol>
+<li>For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.</li>
+<li>To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.</li>
+<li>No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.</li>
+<li>Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
