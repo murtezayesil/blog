@@ -6,5 +6,6 @@
 
 ---
 
+[About me](./about_me.md)
 [Not very FAQ](./faq.md)
 [Licence](./license.md)

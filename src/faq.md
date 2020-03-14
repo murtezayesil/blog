@@ -30,8 +30,19 @@ To my parents 👫️ who sacrificed their lifetime 💕️ for us, my siblings 
 
 [CMS](https://en.wikipedia.org/wiki/Content_management_system) : Content Management System
 
+[Distro](https://en.wikipedia.org/wiki/Linux_distribution) : An operating system that is based on a FOSS kernel such as Linux kernel.
+Short for distribution.
+
+[FOSS](https://www.gnu.org/philosophy/free-sw.html) : Free and Open-Source Software
+Free as in freedom, not price. FOSS software is [freely licensed](https://www.gnu.org/licenses/copyleft.html "copyleft") to run, copy, distribute, study, change and improve. Therefore any free software openly shares its [source code](https://en.wikipedia.org/wiki/Source_code).
+
+[HTML](https://en.wikipedia.org/wiki/HTML) : Markup Language that tells your browser what should be displayed on the screen and how it should look. Read this page's source to go "Hmm, so this is how it works!"
+
+[Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel) : Low level software that allows communication between operating system and hardware.
+World's largest FOSS project.
+
 [MarkDown](https://en.wikipedia.org/wiki/Markdown) : Simple markup language that is easy-to-write and easy-to-read.
 
-[HTML](https://en.wikipedia.org/wiki/HTML) : Markup Language that tells your browser what should be displayed on the screen. It tells everything to your computer from where should be the Search button to what should be the background color, from the title of the page to size of each and every text. Read this page's source to go "Hmm, so this is how it works!"
+[Rust Language](https://en.wikipedia.org/wiki/Rust_(programming_language)) : A programming Language that looks similar to C++ but provides better memory management while not sacrificing in performance.
 
-[Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) : A programming Language that looks similar to C++ but provides better memory management while not sacrificing in performance.
+Thanks to whoever is writing those wikipedia pages 😙️
