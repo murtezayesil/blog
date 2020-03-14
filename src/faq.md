@@ -1,6 +1,6 @@
 # Not very FAQ
 
-> Why is it called " FAQ"? </summary>
+> Why is it called "Not very FAQ"? </summary>
 >
 >> I have recently started blogging and wanted to try mdBook's capabilities by writing an FAQ page. In case people get questions about this blog, I want some of them are be pre-answered.
 
