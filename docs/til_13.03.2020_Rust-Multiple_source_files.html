@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Test - Chapter 2 - Ali Murteza Yesil</title>
+        <title>Rust - Multiple source files - Ali Murteza Yesil</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Test - Chapter 1</a></li><li class="expanded "><a href="chapter_2.html" class="active"><strong aria-hidden="true">2.</strong> Test - Chapter 2</a></li><li class="spacer"></li><li class="expanded affix "><a href="faq.html">Not very FAQ</a></li><li class="expanded affix "><a href="license.html">Licence</a></li><li class="expanded affix "><a href="LICENSE.html">LICENSE.md</a></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="til.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li><ol class="section"><li class="expanded "><a href="til_12.03.2020_Blog-How_to_start_a_blog.html"><strong aria-hidden="true">1.1.</strong> Blog - How to start a blog</a></li><li class="expanded "><a href="til_13.03.2020_Rust-Multiple_source_files.html" class="active"><strong aria-hidden="true">1.2.</strong> Rust - Multiple source files</a></li><li class="spacer"></li></ol></li><li class="expanded "><a href="faq.html">Not very FAQ</a></li><li class="expanded affix "><a href="license.html">Licence</a></li><li class="expanded affix "><a href="../LICENSE.html">LICENSE.md</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -148,15 +148,44 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#chapter-1" id="chapter-1">Chapter 1</a></h1>
-<p>This is a test. Ok?</p>
+                        <h1><a class="header" href="#using-multiple-rust-source-files" id="using-multiple-rust-source-files">Using multiple Rust source files</a></h1>
+<p>I am learning <a href="httpd://www.rust-lang.org">Rust Programming Language</a>. Its way of taking care of data helps developers avoid many problems in the future.</p>
+<h4><a class="header" href="#srcsquarers" id="srcsquarers">src/square.rs</a></h4>
+<pre><pre class="playpen"><code class="language-rust">
+<span class="boring">#![allow(unused_variables)]
+</span><span class="boring">fn main() {
+</span>fn square_of( number:i32 ) -&gt; i64 {
+    number * number
+}
+<span class="boring">}
+</span></code></pre></pre>
+<h4><a class="header" href="#srcmainrs" id="srcmainrs">src/main.rs</a></h4>
+<pre><pre class="playpen"><code class="language-rust">//  add square.rs as a MODule
+//  mod PATH_TO_FILE (without .rs extension) ;
+mod square;
+
+fn main() {
+    let number = 4;
+    println!(&quot;Square of {} is {}&quot;, number, square_of(number) );
+}
+</code></pre></pre>
+<p>This program will <em>import</em> <code>square_of()</code> function form <code>square.rs</code>.</p>
+<hr />
+<p>Until today, I have been writing all the code for a program into main.rs file, main source file for Rust.<br />
+The problems with this strategy are:</p>
+<ul>
+<li>code becomes hard to read and fix.</li>
+<li>computer takes longer to compile 🤔️ <sup class="footnote-reference"><a href="#1">1</a></sup></li>
+<li>seeing unrelated code, of other functions, can break focus. (This may sound like a none-sense, but I lose focus easily)</li>
+</ul>
+<p><sup class="footnote-reference"><a href="#1">1</a></sup>: Not always but parallel compiling should benefit from this. While making this claim I want to point out that I DO NOT know how Rust compiler handles parallel compiling. But it is a good practice none-the-less.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="chapter_1.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="til_12.03.2020_Blog-How_to_start_a_blog.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
@@ -174,7 +203,7 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a href="chapter_1.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="til_12.03.2020_Blog-How_to_start_a_blog.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 

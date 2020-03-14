@@ -24,6 +24,8 @@
     </p>
 </details>
 
+To my parents 👫️ who sacrificed their lifetime 💕️ for us, my siblings and I.
+
 ### Glossary
 
 [CMS](https://en.wikipedia.org/wiki/Content_management_system) : Content Management System
@@ -32,3 +34,4 @@
 
 [HTML](https://en.wikipedia.org/wiki/HTML) : Markup Language that tells your browser what should be displayed on the screen. It tells everything to your computer from where should be the Search button to what should be the background color, from the title of the page to size of each and every text. Read this page's source to go "Hmm, so this is how it works!"
 
+[Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) : A programming Language that looks similar to C++ but provides better memory management while not sacrificing in performance.

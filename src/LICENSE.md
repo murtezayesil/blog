@@ -1,1 +1,0 @@
-/home/ali/Documents/murtezayesil.github.io/LICENSE.md

@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> Test - Chapter 1</a></li><li class="expanded "><a href="chapter_2.html"><strong aria-hidden="true">2.</strong> Test - Chapter 2</a></li><li class="spacer"></li><li class="expanded affix "><a href="faq.html">Not very FAQ</a></li><li class="expanded affix "><a href="license.html">Licence</a></li><li class="expanded affix "><a href="LICENSE.html">LICENSE.md</a></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="til.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li><ol class="section"><li class="expanded "><a href="til_12.03.2020_Blog-How_to_start_a_blog.html"><strong aria-hidden="true">1.1.</strong> Blog - How to start a blog</a></li><li class="expanded "><a href="til_13.03.2020_Rust-Multiple_source_files.html"><strong aria-hidden="true">1.2.</strong> Rust - Multiple source files</a></li><li class="spacer"></li></ol></li><li class="expanded "><a href="faq.html">Not very FAQ</a></li><li class="expanded affix "><a href="license.html">Licence</a></li><li class="expanded affix "><a href="../LICENSE.html">LICENSE.md</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -150,10 +150,69 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#chapter-1" id="chapter-1">Chapter 1</a></h1>
-<p>This is a test. Ok?</p>
-<h1><a class="header" href="#chapter-1-1" id="chapter-1-1">Chapter 1</a></h1>
-<p>This is a test. Ok?</p>
+                        <h1><a class="header" href="#today-i-learned" id="today-i-learned">Today I Learned</a></h1>
+<p>TIL is an abreviation that I like for 3 reasons :</p>
+<ol>
+<li>
+<p>It shows progress.</p>
+</li>
+<li>
+<p>It is both motivation and a teacher for future you.<br />
+We learn. We forget. We relearn.</p>
+</li>
+<li>
+<p>It is a diary that I always wanted to write never got a habit of 😬️😁️</p>
+</li>
+</ol>
+<h1><a class="header" href="#blog---how-to-start-a-blog" id="blog---how-to-start-a-blog">Blog - How to start a blog</a></h1>
+<h1><a class="header" href="#under-construstion" id="under-construstion">Under Construstion</a></h1>
+<p><code>Under Construction GIF goes here</code>
+0. Motivation</p>
+<ol>
+<li>
+<p>Blog</p>
+</li>
+<li>
+<p>Host</p>
+</li>
+<li>
+<p>Domain</p>
+</li>
+<li>
+<p>RSS</p>
+</li>
+</ol>
+<h1><a class="header" href="#using-multiple-rust-source-files" id="using-multiple-rust-source-files">Using multiple Rust source files</a></h1>
+<p>I am learning <a href="httpd://www.rust-lang.org">Rust Programming Language</a>. Its way of taking care of data helps developers avoid many problems in the future.</p>
+<h4><a class="header" href="#srcsquarers" id="srcsquarers">src/square.rs</a></h4>
+<pre><pre class="playpen"><code class="language-rust">
+<span class="boring">#![allow(unused_variables)]
+</span><span class="boring">fn main() {
+</span>fn square_of( number:i32 ) -&gt; i64 {
+    number * number
+}
+<span class="boring">}
+</span></code></pre></pre>
+<h4><a class="header" href="#srcmainrs" id="srcmainrs">src/main.rs</a></h4>
+<pre><pre class="playpen"><code class="language-rust">//  add square.rs as a MODule
+//  mod PATH_TO_FILE (without .rs extension) ;
+mod square;
+
+fn main() {
+    let number = 4;
+    println!(&quot;Square of {} is {}&quot;, number, square_of(number) );
+}
+</code></pre></pre>
+<p>This program will <em>import</em> <code>square_of()</code> function form <code>square.rs</code>.</p>
+<hr />
+<p>Until today, I have been writing all the code for a program into main.rs file, main source file for Rust.<br />
+The problems with this strategy are:</p>
+<ul>
+<li>code becomes hard to read and fix.</li>
+<li>computer takes longer to compile 🤔️ <sup class="footnote-reference"><a href="#1">1</a></sup></li>
+<li>seeing unrelated code, of other functions, can break focus. (This may sound like a none-sense, but I lose focus easily)</li>
+</ul>
+<p><sup class="footnote-reference"><a href="#1">1</a></sup>: Not always but parallel compiling should benefit from this. While making this claim I want to point out that I DO NOT know how Rust compiler handles parallel compiling. But it is a good practice none-the-less.</p>
 <h1><a class="header" href="#not-very-faq" id="not-very-faq">Not very FAQ</a></h1>
 <blockquote>
 <p>Why is it called &quot; FAQ&quot;? </summary></p>
@@ -182,10 +241,12 @@
         4. CMSs usually embed "innocent" trackers to count visits. I don't care about how many people read my articles. I would rather have meaningful conversation in social media than seeing visitor numbers go up.
     </p>
 </details>
+<p>To my parents 👫️ who sacrificed their lifetime 💕️ for us, my siblings and I.</p>
 <h3><a class="header" href="#glossary" id="glossary">Glossary</a></h3>
 <p><a href="https://en.wikipedia.org/wiki/Content_management_system">CMS</a> : Content Management System</p>
 <p><a href="https://en.wikipedia.org/wiki/Markdown">MarkDown</a> : Simple markup language that is easy-to-write and easy-to-read.</p>
 <p><a href="https://en.wikipedia.org/wiki/HTML">HTML</a> : Markup Language that tells your browser what should be displayed on the screen. It tells everything to your computer from where should be the Search button to what should be the background color, from the title of the page to size of each and every text. Read this page's source to go &quot;Hmm, so this is how it works!&quot;</p>
+<p><a href="https://en.wikipedia.org/wiki/Rust_(programming_language)">Rust</a> : A programming Language that looks similar to C++ but provides better memory management while not sacrificing in performance.</p>
 <h1><a class="header" href="#license-information" id="license-information">License Information</a></h1>
 <p>All of the content on this site is produced under the Creative Commons Attribution – Share Alike 4.0 License (unless otherwise stated), which means the following:</p>
 <ul>
@@ -210,7 +271,7 @@
 <h2><a class="header" href="#section-1--definitions" id="section-1--definitions">Section 1 – Definitions.</a></h2>
 <p>a. <strong>Adapted Material</strong> means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.</p>
 <p>b. <strong>Adapter's License</strong> means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.</p>
-<p>c. <strong>BY-SA Compatible License</strong> means a license listed at <a href="creativecommons.org/compatiblelicenses">creativecommons.org/compatiblelicenses</a>, approved by Creative Commons as essentially the equivalent of this Public License.</p>
+<p>c. <strong>BY-SA Compatible License</strong> means a license listed at <a href="../creativecommons.org/compatiblelicenses">creativecommons.org/compatiblelicenses</a>, approved by Creative Commons as essentially the equivalent of this Public License.</p>
 <p>d. <strong>Copyright and Similar Rights</strong> means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode#s2b">2(b)(1)-(2)</a> are not Copyright and Similar Rights.</p>
 <p>e. <strong>Effective Technological Measures</strong> means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.</p>
 <p>f. <strong>Exceptions and Limitations</strong> means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.</p>
