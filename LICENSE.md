@@ -53,7 +53,7 @@ By exercising the Licensed Rights (defined below), You accept and agree to be bo
 
 Your exercise of the Licensed Rights is expressly made subject to the following conditions.
 
- 1. Attribution.
+ 1. **Attribution**.
     1. If You Share the Licensed Material (including in modified form), You must:
         1. retain the following if it is supplied by the Licensor with the Licensed Material:
             1. identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
@@ -65,7 +65,7 @@ Your exercise of the Licensed Rights is expressly made subject to the following 
         3. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
     2. You may satisfy the conditions in Section [3(a)(1)](https://creativecommons.org/licenses/by-sa/4.0/legalcode#s3a1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
     3. If requested by the Licensor, You must remove any of the information required by Section [3(a)(1)(A)](https://creativecommons.org/licenses/by-sa/4.0/legalcode#s3a1A) to the extent reasonably practicable.
- 2. ShareAlike.
+ 2. **ShareAlike**.  
     In addition to the conditions in Section [3(a)](https://creativecommons.org/licenses/by-sa/4.0/legalcode#s3a), if You Share Adapted Material You produce, the following conditions also apply.
     1. The Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.
     2. You must include the text of, or the URI or hyperlink to, the Adapter's License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.
@@ -103,4 +103,4 @@ For the avoidance of doubt, this Section 4 supplements and does not replace Your
  2. To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.
  3. No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
  4. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
- 
+

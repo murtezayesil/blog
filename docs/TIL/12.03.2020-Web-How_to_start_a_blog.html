@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Rust - Multiple source files - Ali Murteza Yesil</title>
+        <title>Web - How to start a blog - Ali Murteza Yesil</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -11,21 +11,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
         
@@ -35,7 +35,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
         </script>
 
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded "><a href="til.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li><ol class="section"><li class="expanded "><a href="til_12.03.2020_Blog-How_to_start_a_blog.html"><strong aria-hidden="true">1.1.</strong> Blog - How to start a blog</a></li><li class="expanded "><a href="til_13.03.2020_Rust-Multiple_source_files.html" class="active"><strong aria-hidden="true">1.2.</strong> Rust - Multiple source files</a></li><li class="spacer"></li></ol></li><li class="expanded "><a href="faq.html">Not very FAQ</a></li><li class="expanded affix "><a href="license.html">Licence</a></li><li class="expanded affix "><a href="../LICENSE.html">LICENSE.md</a></li></ol>
+                <ol class="chapter"><li class="expanded "><a href="../TIL/preface.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li><ol class="section"><li class="expanded "><a href="../TIL/12.03.2020-Web-How_to_start_a_blog.html" class="active"><strong aria-hidden="true">1.1.</strong> Web - How to start a blog</a></li><li class="expanded "><a href="../TIL/13.03.2020-Rust-Multiple_source_files.html"><strong aria-hidden="true">1.2.</strong> Rust - Multiple source files</a></li><li class="spacer"></li></ol></li><li class="expanded "><a href="../faq.html">Not very FAQ</a></li><li class="expanded affix "><a href="../license.html">Licence</a></li><li class="expanded affix "><a href="../LICENSE.html">Creative Commons LICENSE</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -116,7 +116,7 @@
                         <h1 class="menu-title">Ali Murteza Yesil</h1>
 
                         <div class="right-buttons">
-                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
                                 <i id="print-button" class="fa fa-print"></i>
                             </a>
                             
@@ -148,50 +148,37 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#using-multiple-rust-source-files" id="using-multiple-rust-source-files">Using multiple Rust source files</a></h1>
-<p>I am learning <a href="httpd://www.rust-lang.org">Rust Programming Language</a>. Its way of taking care of data helps developers avoid many problems in the future.</p>
-<h4><a class="header" href="#srcsquarers" id="srcsquarers">src/square.rs</a></h4>
-<pre><pre class="playpen"><code class="language-rust">
-<span class="boring">#![allow(unused_variables)]
-</span><span class="boring">fn main() {
-</span>fn square_of( number:i32 ) -&gt; i64 {
-    number * number
-}
-<span class="boring">}
-</span></code></pre></pre>
-<h4><a class="header" href="#srcmainrs" id="srcmainrs">src/main.rs</a></h4>
-<pre><pre class="playpen"><code class="language-rust">//  add square.rs as a MODule
-//  mod PATH_TO_FILE (without .rs extension) ;
-mod square;
-
-fn main() {
-    let number = 4;
-    println!(&quot;Square of {} is {}&quot;, number, square_of(number) );
-}
-</code></pre></pre>
-<p>This program will <em>import</em> <code>square_of()</code> function form <code>square.rs</code>.</p>
-<hr />
-<p>Until today, I have been writing all the code for a program into main.rs file, main source file for Rust.<br />
-The problems with this strategy are:</p>
-<ul>
-<li>code becomes hard to read and fix.</li>
-<li>computer takes longer to compile 🤔️ <sup class="footnote-reference"><a href="#1">1</a></sup></li>
-<li>seeing unrelated code, of other functions, can break focus. (This may sound like a none-sense, but I lose focus easily)</li>
-</ul>
-<p><sup class="footnote-reference"><a href="#1">1</a></sup>: Not always but parallel compiling should benefit from this. While making this claim I want to point out that I DO NOT know how Rust compiler handles parallel compiling. But it is a good practice none-the-less.</p>
+                        <h1><a class="header" href="#blog---how-to-start-a-blog" id="blog---how-to-start-a-blog">Blog - How to start a blog</a></h1>
+<h1><a class="header" href="#under-construstion" id="under-construstion">Under Construstion</a></h1>
+<p><code>Under Construction GIF goes here</code>
+0. Motivation</p>
+<ol>
+<li>
+<p>Blog</p>
+</li>
+<li>
+<p>Host</p>
+</li>
+<li>
+<p>Domain</p>
+</li>
+<li>
+<p>RSS</p>
+</li>
+</ol>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="til_12.03.2020_Blog-How_to_start_a_blog.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../TIL/preface.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="faq.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../TIL/13.03.2020-Rust-Multiple_source_files.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -203,13 +190,13 @@ The problems with this strategy are:</p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a href="til_12.03.2020_Blog-How_to_start_a_blog.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a href="../TIL/preface.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a href="faq.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="../TIL/13.03.2020-Rust-Multiple_source_files.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
@@ -232,14 +219,14 @@ The problems with this strategy are:</p>
         
 
         
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
         
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
         
