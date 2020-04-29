@@ -1,0 +1,354 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Personal AppImage Wiki - Ali Murteza Yesil</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../home.html">Home</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../2020/April/personal_appimage_wiki.html" class="active"><strong aria-hidden="true">1.</strong> Personal AppImage Wiki</a></li><li class="chapter-item expanded "><a href="../../2020/April/learning_to_script.html"><strong aria-hidden="true">2.</strong> Learning to (Shell) Script</a></li><li class="chapter-item expanded "><a href="../../2020/April/continuity.html"><strong aria-hidden="true">3.</strong> Continuity</a></li><li class="chapter-item expanded "><a href="../../2020/April/dont_fear.tar.html"><strong aria-hidden="true">4.</strong> don't_fear.tar</a></li><li class="chapter-item expanded "><a href="../../2020/March/i_want_to_blog.html"><strong aria-hidden="true">5.</strong> I want to blog</a></li><li class="chapter-item expanded "><a href="../../2020/March/multiple_source_files.html"><strong aria-hidden="true">6.</strong> Rust - Multiple source files</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../about_me.html">About me</a></li><li class="chapter-item expanded affix "><a href="../../archive.html">Archive</a></li><li class="chapter-item expanded affix "><a href="../../faq.html">FAQ</a></li><li class="chapter-item expanded affix "><a href="../../license.html">Licence</a></li><li class="chapter-item expanded affix "><a href="../../rss.html">RSS</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Ali Murteza Yesil</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#appimage-is-great" id="appimage-is-great">AppImage is great</a></h1>
+<p>If you distro hop a lot then you know it can be pain to setup your workflow <em>again</em> after a hype powered hop. It can be even more frustrating if packages you need are not available in local repo or require compiling. Compiling isn't really a bad thing or frustrating, but it can take long time. Let me introduce [drums ...] AppImage. This beauty has everyting in it and it is cross-distro.</p>
+<p><strong>Fun Fact</strong>: Apple have been using AppImage like technology for years. If you used a Mac PC*, you probably downloaded <code>.dmg</code> (disk image) files to install programs which are not available on App Store. Programs in <code>.dmg</code> can be run without installing. Installing them is as simple as moving them to Applications directory.</p>
+<p>* Macs are personal computers, change my mind.</p>
+<p>AppImages are awesome but not perfect:</p>
+<blockquote>
+<h4><a class="header" href="#no-installation" id="no-installation">No installation</a></h4>
+<blockquote>
+<p><strong>Pro</strong> They are portable and don't need root priviledges to install</p>
+</blockquote>
+<blockquote>
+<p><strong>Con</strong> They are archieves that may take few seconds to extract</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<h4><a class="header" href="#ship-with-their-dependencies" id="ship-with-their-dependencies">Ship with their dependencies</a></h4>
+<blockquote>
+<p><strong>Pro</strong> No update breaks AppImage dependency</p>
+<p><em>except updates to <a href="https://en.wikipedia.org/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace">fuse</a> or kernel</em></p>
+</blockquote>
+<blockquote>
+<p><strong>Con</strong> They usualy are larger than normal installation from local repo</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<h4><a class="header" href="#read-only" id="read-only">Read only</a></h4>
+<blockquote>
+<p><strong>Pro</strong> No virus or malware can enter from outside</p>
+</blockquote>
+<blockquote>
+<p><strong>Con</strong> Any changes to settings and such are stored in <code>$USER</code> profile, not in AppImage</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<h5><a class="header" href="#honorable-mentions" id="honorable-mentions">Honorable mentions</a></h5>
+<blockquote>
+<p><strong>Pro</strong> Multiple versions can co-exist and sometimes even &quot;co-run&quot;</p>
+</blockquote>
+<blockquote>
+<p><strong>Con</strong> Most AppImages don't create application menu entry for easy access. GitNote is one very few that solves this issue.</p>
+<p><img src="./appimage_install.png" alt="AppImage for GitNote is asking to add an application menu shortcut for easier access" title="AppImage install dialog from GitNote" /></p>
+<p>This issue can be addressed for all AppImages via appimaged</p>
+</blockquote>
+<blockquote>
+<p><strong>Con</strong> AppImages aren't executable by default. I know the security reason behind it and don't really mind that, but warning users with a question dialog would be better UX in my opinion</p>
+<p><img src="./appimage_confirmation_question_concept.png" alt="A concept question dialog for asking users whether AppImage should become executable" title="Concept dialog box" /></p>
+<p>This issue can be addressed for all AppImages via appimaged</p>
+</blockquote>
+</blockquote>
+<p><em>I wrote this post out of frustration because most AppImages don't appear in applications menu like other applications do.</em> This kinda defeats the goal of AppImage which I believe is &quot;It just works&quot;. But just like everything that is Linux, there is some setup for AppImages too. I initially wrote this tutorial for future reference for myself.</p>
+<h4><a class="header" href="#tutorial---manual" id="tutorial---manual">Tutorial - Manual</a></h4>
+<p>As example, I will write <code>.desktop</code> file for Rambox. You can follow along.</p>
+<p>Things we need</p>
+<ul>
+<li>
+<p>AppImage (duh)</p>
+</li>
+<li>
+<p><code>.desktop</code> file at <code>~/.local/share/applications</code></p>
+</li>
+<li>
+<p>Icon</p>
+</li>
+</ul>
+<ol>
+<li>
+<p>Move AppImage to <code>~/.local/bin</code> directory</p>
+</li>
+<li>
+<p>Make sure that AppImage is executable. Then run</p>
+</li>
+<li>
+<p>Running Rambox AppImage will extract its content to <code>/tmp/.mount_RamboxXYZ</code>. You can find Rambox's icons under <code>icon</code> directory. Copy it to <code>~/.local/share</code>, it will merge Rambox's icons into local icons</p>
+</li>
+<li>
+<p>Write a <code>.desktop</code> file at <code>~/.local/share/applications</code> with below template. Remember to change every attitude according to your program.</p>
+</li>
+</ol>
+<pre><code class="language-shell">   [Desktop Entry]
+   # Required
+   # Type must be set to Application, else OS will ignore this file
+   Type=Application
+   # The name of the application
+   Name=Rambox
+   # The executable of the application, possibly with arguments.
+   Exec=~/.local/bin/Rambox.AppImage
+
+   # Recommended
+   # Comment, AKA description. This will be used as tooltip
+   Comment=All communication services in 1 place
+   # The name of the icon that will be used to display this entry
+   # This is not a path. Application icons should be copied to
+   #     .local/share/icons/hicolor/[Respective icon dimension]/apps
+   Icon=rambox
+   # Describes whether this application needs to be run in a terminal or not
+   #    set to true if need to launch program in terminal (such as htop, vim)
+   #    or want to read logs    
+   Terminal=false
+   # Describes the categories in which this entry should be shown
+   # Seperated using ;
+   # Examples: Internet;Network;Communication;Graphics;Programming;Sound;
+   #            Entertainment;Office;Games;Video;Python;Utility;
+   #             Language;Java;Rust;GTK;GNOME;KDE;
+   Categories=Communication;Internet;
+
+   # Source: https://wiki.archlinux.org/index.php/Desktop_entries
+</code></pre>
+<ol start="5">
+<li>Enjoy</li>
+</ol>
+<p>Later I found that there is a daemon for semi-automating this process. </p>
+<h4><a class="header" href="#tutorial---semi-automated" id="tutorial---semi-automated">Tutorial - Semi-Automated</a></h4>
+<ol>
+<li>
+<p>Install <code>appimaged</code> as instructed on <a href="https://github.com/AppImage/appimaged#install">appimaged readme</a></p>
+</li>
+<li>
+<p>Re-login.</p>
+</li>
+<li>
+<p>Move every AppImage you downloaded to <code>~/.local/bin</code> or <code>~/Applications</code>.</p>
+</li>
+<li>
+<p>Enjoy </p>
+</li>
+</ol>
+<h4><a class="header" href="#thanks-to" id="thanks-to">Thanks to</a></h4>
+<ol>
+<li>
+<p>AppImage developers. It is awesome.</p>
+</li>
+<li>
+<p><a href="https://radical.town/@olivia/">Olivia Maia</a> for not being a freeloader and making research before asking a question. I learned <code>zenity</code> command from her. Be like Olivia.</p>
+</li>
+</ol>
+<p>#appimage #software #linux</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../home.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../2020/April/learning_to_script.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../../home.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../../2020/April/learning_to_script.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

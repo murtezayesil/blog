@@ -1,48 +1,60 @@
-# Not very FAQ
+# FAQ
 
-> Why is it called "Not very FAQ"? </summary>
->
->> I have recently started blogging and wanted to try mdBook's capabilities by writing an FAQ page. In case people get questions about this blog, I want some of them are be pre-answered.
+#### This blog looks great 🙂️ Which CMS and theme do you use?
 
->This blog looks great 🙂️ Which CMS and theme do you use?
+This blog is written in [MarkDown](#markdown). Pages are generated from markdown by [*mdBook*](https://github.com/rust-lang/mdbook).
+
+---
+
+#### Why use **mdBook**, an online book creation tool, while there are CMSs that specializes on blogging ?
+
+1. CMSs are overkill for my needs
+2. I don't want to run a software that will require updating time to time.
+3. I **feel** like CMSs are vendor locking in some way. Many of them require creating account to use their tools. I am not saying that is not fair, it is their platform after all. I don't want one more online account for something I don't need.
+4. CMSs usually embed "innocent" trackers to count visits. I don't care about how many people read my articles. I would rather have meaningful conversation in social media than seeing visitor numbers go up.
+
+To my parents 👫️ who put us 👦️👦️👧️ before their lifes 💕️
+
+# 
+
+## Jargon
+
+> ##### CMS
 > 
->>Not powered by a CMS. This page is built using *[mdBook](https://github.com/rust-lang/mdbook).*
+> Content Management System
+> [Read more](https://en.wikipedia.org/wiki/Content_management_system)
 
-<details>
-    <summary> Why use <b>mdBook</b>, an online book creation tool, while there are CMSs that specializes on Blogging ? </summary>
-    <p>
-        1. CMSs are overkill for my needs
-    </p>
-    <p>
-        2. I don't want to run a software that will require updating time to time.
-    </p>
-    <p>
-        3. I <b>feel</b> like CMSs are vendor locking in some way. Many of them require creating account to use their tools. I am not saying that is not fair, it is their platform after all. I don't want one more online account for something I don't need.
-    </p>
-    <p>
-        4. CMSs usually embed "innocent" trackers to count visits. I don't care about how many people read my articles. I would rather have meaningful conversation in social media than seeing visitor numbers go up.
-    </p>
-</details>
+> #### Distro
+> 
+> An operating system that is based on a kernel that is FOSS.
+> Short for distribution.
+> [Read more](https://en.wikipedia.org/wiki/Linux_distribution)
 
-To my parents 👫️ who sacrificed their lifetime 💕️ for us, my siblings and I.
+> #### FOSS
+> 
+> Free and Open-Source Software
+> Free as in freedom, not price. FOSS software is [freely licensed](https://www.gnu.org/licenses/copyleft.html "copyleft") to run, copy, distribute, study, change and improve. Therefore any free software openly shares its [source code](https://en.wikipedia.org/wiki/Source_code).
+> [Read more](https://www.gnu.org/philosophy/free-sw.html)
 
-### Glossary
+> #### HTML
+> 
+> Markup Language that tells your browser what should be displayed on the screen and how it should look. Read this page's source to go "Hmm, so this is how it works!"
+> [Read more](https://en.wikipedia.org/wiki/HTML)
 
-[CMS](https://en.wikipedia.org/wiki/Content_management_system) : Content Management System
+> #### Linux kernel
+> 
+> Low level software that allows communication between operating system and hardware.
+> World's largest FOSS project.
+> [Read more](https://en.wikipedia.org/wiki/Linux_kernel)
 
-[Distro](https://en.wikipedia.org/wiki/Linux_distribution) : An operating system that is based on a FOSS kernel such as Linux kernel.
-Short for distribution.
+> #### MarkDown
+> 
+> Simple markup language that is easy-to-write and easy-to-read for humans.  
+> [Read more](https://en.wikipedia.org/wiki/Markdown)
 
-[FOSS](https://www.gnu.org/philosophy/free-sw.html) : Free and Open-Source Software
-Free as in freedom, not price. FOSS software is [freely licensed](https://www.gnu.org/licenses/copyleft.html "copyleft") to run, copy, distribute, study, change and improve. Therefore any free software openly shares its [source code](https://en.wikipedia.org/wiki/Source_code).
-
-[HTML](https://en.wikipedia.org/wiki/HTML) : Markup Language that tells your browser what should be displayed on the screen and how it should look. Read this page's source to go "Hmm, so this is how it works!"
-
-[Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel) : Low level software that allows communication between operating system and hardware.
-World's largest FOSS project.
-
-[MarkDown](https://en.wikipedia.org/wiki/Markdown) : Simple markup language that is easy-to-write and easy-to-read.
-
-[Rust Language](https://en.wikipedia.org/wiki/Rust_(programming_language)) : A programming Language that looks similar to C++ but provides better memory management while not sacrificing in performance.
+> #### Rust
+> 
+> A programming Language that looks similar to C++ but provides better memory management while not sacrificing in performance.
+> [Read more](https://en.wikipedia.org/wiki/Rust_(programming_language))
 
 Thanks to whoever is writing those wikipedia pages 😙️

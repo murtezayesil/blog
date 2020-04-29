@@ -1,0 +1,19 @@
+# 🏡️ Home
+
+
+
+> [**Learning to (Shell) scripting**](./2020/April/learning_to_scripting.md)
+> 
+> > We write shell scripts to automate a task or avoid having to write same code again and again. I believe that it is important for every SysAdmin to know how to write shell scripts. But everything starts small.
+
+> [**don't_fear.tar**](./2020/April/dont_fear.tar.md)
+> 
+> > I wanted to become a SysAdmin. I believe that a SysAdmin should know ins and outs of Linux. LFS was my first attempt to take a look at behind the scenes part of the Linux. Tar files were my first fear.
+
+> [**I want to blog**](./2020/March/i_want_to_blog.md)
+> 
+> > I wanted to have a developer landing page. But I don't know much about developing an internet site. So I had to start small, with a side project.
+
+> [**Multiple source files - Rust**](./2020/March/multiple_source_files.md)
+> 
+> > I have been writting all the code for a program into a single file. Today I learned how to import code from multiple files for better maintainability.

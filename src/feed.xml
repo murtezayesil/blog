@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Murteza's Blog Feed</title>
+        <title>Ali Murteza Yesil's Blog</title>
         <link>blog.murtezayesil.me</link>
-        <description>Ali Murteza Yesil's Blog</description>
+        <description>More RSS, Less Mailing List</description>
 
         <item>
             <title>TIL - Rust - Multiple source files</title>
-            <link>https://blog.murtezayesil.me/TIL/13.03.2020/Rust-Multiple_source_files.html</link>
-            <guid>https://blog.murtezayesil.me/TIL/13.03.2020/Rust-Multiple_source_files.html</guid>
+            <link>https://blog.murtezayesil.me/articles/Rust/Multiple_source_files.html</link>
+            <guid>https://blog.murtezayesil.me/articles/Rust/Multiple_source_files.html</guid>
             <pubDate>Fri, 13 Mar 2020 23:59:00 GMT</pubDate>
-            <description>I have been writing all the code for a program into main.rs file. I learned how to use multiple source files for a project.</description>
+            <description>I have been writing all the code into main.rs file. I learned how to use multiple source files for a project.</description>
         </item>
 
         <item>
             <title>TIL - Web - How to start a blog</title>
-            <link>https://blog.murtezayesil.me/TIL/12.03.2020/Web-How_to_start_a_blog.html</link>
-            <guid>https://blog.murtezayesil.me/TIL/12.03.2020/Web-How_to_start_a_blog.html</guid>
+            <link>https://blog.murtezayesil.me/articles/I_want_to_blog_(again).html</link>
+            <guid>https://blog.murtezayesil.me/articles/I_want_to_blog_(again).html</guid>
             <pubDate>Thu, 12 Mar 2020 23:59:00 GMT</pubDate>
             <description>I wanted to start a blog for a while. But today I took action.</description>
         </item>

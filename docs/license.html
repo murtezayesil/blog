@@ -80,8 +80,8 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
-                <ol class="chapter"><li class="expanded "><a href="TIL/preface.html"><strong aria-hidden="true">1.</strong> TIL</a></li><li><ol class="section"><li class="expanded "><a href="TIL/12.03.2020/Web-How_to_start_a_blog.html"><strong aria-hidden="true">1.1.</strong> Web - How to start a blog</a></li><li class="expanded "><a href="TIL/13.03.2020/Rust-Multiple_source_files.html"><strong aria-hidden="true">1.2.</strong> Rust - Multiple source files</a></li><li class="spacer"></li></ol></li><li class="expanded "><a href="about_me.html">About me</a></li><li class="expanded affix "><a href="faq.html">Not very FAQ</a></li><li class="expanded affix "><a href="license.html" class="active">Licence</a></li><li class="expanded affix "><a href="rss.html">RSS</a></li></ol>
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="home.html">Home</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="2020/April/personal_appimage_wiki.html"><strong aria-hidden="true">1.</strong> Personal AppImage Wiki</a></li><li class="chapter-item expanded "><a href="2020/April/learning_to_script.html"><strong aria-hidden="true">2.</strong> Learning to (Shell) Script</a></li><li class="chapter-item expanded "><a href="2020/April/continuity.html"><strong aria-hidden="true">3.</strong> Continuity</a></li><li class="chapter-item expanded "><a href="2020/April/dont_fear.tar.html"><strong aria-hidden="true">4.</strong> don't_fear.tar</a></li><li class="chapter-item expanded "><a href="2020/March/i_want_to_blog.html"><strong aria-hidden="true">5.</strong> I want to blog</a></li><li class="chapter-item expanded "><a href="2020/March/multiple_source_files.html"><strong aria-hidden="true">6.</strong> Rust - Multiple source files</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="about_me.html">About me</a></li><li class="chapter-item expanded affix "><a href="archive.html">Archive</a></li><li class="chapter-item expanded affix "><a href="faq.html">FAQ</a></li><li class="chapter-item expanded affix "><a href="license.html" class="active">Licence</a></li><li class="chapter-item expanded affix "><a href="rss.html">RSS</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -90,37 +90,36 @@
 
             <div class="page">
                 
-                <div id="menu-bar" class="menu-bar">
-                    <div id="menu-bar-sticky-container">
-                        <div class="left-buttons">
-                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                                <i class="fa fa-bars"></i>
-                            </button>
-                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                                <i class="fa fa-paint-brush"></i>
-                            </button>
-                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
-                            </ul>
-                            
-                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
-                                <i class="fa fa-search"></i>
-                            </button>
-                            
-                        </div>
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
 
-                        <h1 class="menu-title">Ali Murteza Yesil</h1>
+                    <h1 class="menu-title">Ali Murteza Yesil</h1>
 
-                        <div class="right-buttons">
-                            <a href="print.html" title="Print this book" aria-label="Print this book">
-                                <i id="print-button" class="fa fa-print"></i>
-                            </a>
-                            
-                        </div>
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -315,13 +314,13 @@ For the avoidance of doubt, this Section 6(b) does not affect   any right the Li
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a href="faq.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="faq.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a href="rss.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="rss.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 

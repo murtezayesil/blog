@@ -4,3 +4,4 @@ title = "Ali Murteza Yesil"
 language = "en"
 multilingual = false
 src = "src"
+theme = "Rust"
