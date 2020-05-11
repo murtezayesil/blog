@@ -2,6 +2,8 @@
 
 [Home](./home.md)
 
+[#100DaysToOffload](./2020/100_days_to_offload.md)
+
 ---
 
 - [Personal AppImage Wiki](./2020/April/personal_appimage_wiki.md)
@@ -18,7 +20,7 @@
 
 ---
 
-[About me](./about_me.md)  
+[About](./about.md)  
 [Archive](./archive.md)  
 [FAQ](./faq.md)  
 [Licence](./license.md)  
