@@ -1,0 +1,8 @@
+setup SMTP server to enable emailing on ubuntu-cloud instance +cloud @ssh
+Setup Jitsi Meet on ubuntu-cloud instance +cloud @ssh
+
+Produce logo & favicon +landingpage +blog @home
+(B) Write a landing page +landingpage +blog @home inspiration:https://yarmo.eu inspiration:kevq.uk
+(C) Direct landing page to murtezayesil.me +landingpage @web
+Set default blog theme to Rust +blog @web
+(A)Update #100DaysToOffload posts +blog @home

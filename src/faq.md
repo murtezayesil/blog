@@ -9,9 +9,8 @@ This blog is written in [MarkDown](#markdown). Pages are generated from markdown
 #### Why use **mdBook**, an online book creation tool, while there are CMSs that specializes on blogging ?
 
 1. CMSs are overkill for my needs
-2. I don't want to run a software that will require updating time to time.
-3. I **feel** like CMSs are vendor locking in some way. Many of them require creating account to use their tools. I am not saying that is not fair, it is their platform after all. I don't want one more online account for something I don't need.
-4. CMSs usually embed "innocent" trackers to count visits. I don't care about how many people read my articles. I would rather have meaningful conversation in social media than seeing visitor numbers go up.
+2. I don't want to run a PHP server. Static pages are enough for me.
+3. CMSs usually embed "innocent" trackers to count visits. I don't care about how many people read my articles. If you think some of my post was helpful to you, come and talk to me on Mastodon. I would rather have meaningful conversation in social media than seeing visitor numbers go up.
 
 To my parents 👫️ who put us 👦️👦️👧️ before their lifes 💕️
 
