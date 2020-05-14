@@ -14,7 +14,7 @@ Here we go
 
 ---
 
-##### Day 1/100
+##### 1
 
 1. Yay 😃️ I finally took on the challenge  
 
@@ -26,12 +26,23 @@ Here we go
 
 ---
 
-##### Day 2/100
+##### 2
 
 1. I am done with desktop-clock script. Get it on [github](https://github.com/murtezayesil/student/tree/master/sh/desktop-clock)
    
    ![](./desktop-clock.png)
+   
+   Note: I tested the script on 1366x768 display and defaults are good for such displays. Remember to change values if you have 
 
-2. I will setup SMTP for OwnCloud to send emails to its users. I am just happy that it will be more practice for me.
+2. I tried Postfix for send-only email server. I didn't want to install a more feature rich email server for only sending announcement and password reset emails. But configuration is too complicated for me. Not to mention, using sub-domain instead of main-domain doesn't help to configure.
 
 ---
+
+##### Fizz
+
+1. I wanted to implement send-only email server to my OwnCloud instance [yesterday](#2). But it turs out, SMTP and Postfix stuff is way over my head. I will postpone it to later time.
+   
+   Not to mention, I am scared to break currently working system. I should try new things in a burner (testing) server first. And only after a succesfull prototype I should go ahead and do changes in main server.
+   
+   You probably knew that testing first would be a better idea. Guess what! I am a newbie who is just coming to these realizations.
+2. After a long time away from Java, I tried a simple program to see if I can still right something. I wrote a program that validates [ISBM-10](https://github.com/murtezayesil/student/tree/master/java/ISBNcheck/src/com/company) code.
