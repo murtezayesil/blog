@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../home.html">Home</a></li><li class="chapter-item expanded affix "><a href="../../2020/100_days_to_offload.html">#100DaysToOffload</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../2020/April/personal_appimage_wiki.html" class="active"><strong aria-hidden="true">1.</strong> Personal AppImage Wiki</a></li><li class="chapter-item expanded "><a href="../../2020/April/learning_to_script.html"><strong aria-hidden="true">2.</strong> Learning to (Shell) Script</a></li><li class="chapter-item expanded "><a href="../../2020/April/continuity.html"><strong aria-hidden="true">3.</strong> Continuity</a></li><li class="chapter-item expanded "><a href="../../2020/April/dont_fear.tar.html"><strong aria-hidden="true">4.</strong> don't_fear.tar</a></li><li class="chapter-item expanded "><a href="../../2020/March/i_want_to_blog.html"><strong aria-hidden="true">5.</strong> I want to blog</a></li><li class="chapter-item expanded "><a href="../../2020/March/multiple_source_files.html"><strong aria-hidden="true">6.</strong> Rust - Multiple source files</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../about.html">About</a></li><li class="chapter-item expanded affix "><a href="../../archive.html">Archive</a></li><li class="chapter-item expanded affix "><a href="../../faq.html">FAQ</a></li><li class="chapter-item expanded affix "><a href="../../license.html">Licence</a></li><li class="chapter-item expanded affix "><a href="../../rss.html">RSS</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../home.html">Home</a></li><li class="chapter-item expanded affix "><a href="../../2020/100_days_to_offload.html">#100DaysToOffload</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../../2020/April/personal_appimage_wiki.html" class="active"><strong aria-hidden="true">1.</strong> Personal AppImage Wiki</a></li><li class="chapter-item expanded "><a href="../../2020/April/learning_to_script.html"><strong aria-hidden="true">2.</strong> Learning to (Shell) Script</a></li><li class="chapter-item expanded "><a href="../../2020/April/continuity.html"><strong aria-hidden="true">3.</strong> Continuity</a></li><li class="chapter-item expanded "><a href="../../2020/April/dont_fear.tar.html"><strong aria-hidden="true">4.</strong> don't_fear.tar</a></li><li class="chapter-item expanded "><a href="../../2020/March/i_want_to_blog.html"><strong aria-hidden="true">5.</strong> I want to blog</a></li><li class="chapter-item expanded "><a href="../../2020/March/multiple_source_files.html"><strong aria-hidden="true">6.</strong> Rust - Multiple source files</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../about.html">About</a></li><li class="chapter-item expanded affix "><a href="../../archive.html">Archive</a></li><li class="chapter-item expanded affix "><a href="../../faq.html">FAQ</a></li><li class="chapter-item expanded affix "><a href="../../license.html">Licence</a></li><li class="chapter-item expanded affix "><a href="../../feed.html">Feed</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -148,7 +148,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#appimage-is-great" id="appimage-is-great">AppImage is great</a></h1>
-<p>If you distro hop a lot then you know it can be pain to setup your workflow <em>again</em> after a hype powered hop. It can be even more frustrating if packages you need are not available in local repo or require compiling. Compiling isn't really a bad thing or frustrating, but it can take long time. Let me introduce [drums ...] AppImage. This beauty has everyting in it and it is cross-distro.</p>
+<p>If you distro hop a lot, you should know it can be daunting to setup your workflow <em>again</em> after a hype powered hop. It can be even more frustrating if packages you need are not available in local repo or require compiling. Compiling isn't really a bad thing or frustrating, but it can take long time. Let me introduce [drums ...] AppImage 🎉️. This beauty has everyting in it and it is cross-distro.</p>
 <p><strong>Fun Fact</strong>: Apple have been using AppImage like technology for years. If you used a Mac PC*, you probably downloaded <code>.dmg</code> (disk image) files to install programs which are not available on App Store. Programs in <code>.dmg</code> can be run without installing. Installing them is as simple as moving them to Applications directory.</p>
 <p>* Macs are personal computers, change my mind.</p>
 <p>AppImages are awesome but not perfect:</p>
@@ -186,9 +186,9 @@
 <p><strong>Pro</strong> Multiple versions can co-exist and sometimes even &quot;co-run&quot;</p>
 </blockquote>
 <blockquote>
-<p><strong>Con</strong> Most AppImages don't create application menu entry for easy access. GitNote is one very few that solves this issue.</p>
+<p><strong>Con</strong> Most AppImages don't create application menu entry for easy access. GitNote is one  of few that does it for you.</p>
 <p><img src="./appimage_install.png" alt="AppImage for GitNote is asking to add an application menu shortcut for easier access" title="AppImage install dialog from GitNote" /></p>
-<p>This issue can be addressed for all AppImages via appimaged</p>
+<p>This issue can be addressed for <strong>all</strong> AppImages via appimaged</p>
 </blockquote>
 <blockquote>
 <p><strong>Con</strong> AppImages aren't executable by default. I know the security reason behind it and don't really mind that, but warning users with a question dialog would be better UX in my opinion</p>
@@ -196,16 +196,17 @@
 <p>This issue can be addressed for all AppImages via appimaged</p>
 </blockquote>
 </blockquote>
-<p><em>I wrote this post out of frustration because most AppImages don't appear in applications menu like other applications do.</em> This kinda defeats the goal of AppImage which I believe is &quot;It just works&quot;. But just like everything that is Linux, there is some setup for AppImages too. I initially wrote this tutorial for future reference for myself.</p>
+<p><em>I wrote this post out of frustration because most AppImages didn't appear in applications menu like applications installed from local repo.</em> This kinda defeats the goal of AppImage which is &quot;<a href="https://docs.appimage.org/introduction/concepts.html#one-app-one-file">one app = one file</a>&quot;.</p>
 <h4><a class="header" href="#tutorial---manual" id="tutorial---manual">Tutorial - Manual</a></h4>
-<p>As example, I will write <code>.desktop</code> file for Rambox. You can follow along.</p>
+<p>I initially wrote this tutorial for future reference for myself</p>
+<p>As an example, I will write <code>.desktop</code> file for <a href="https://rambox.pro/#home">Rambox</a>. You can follow along.</p>
 <p>Things we need</p>
 <ul>
 <li>
-<p>AppImage (duh)</p>
+<p>AppImage of Rambox (duh)</p>
 </li>
 <li>
-<p><code>.desktop</code> file at <code>~/.local/share/applications</code></p>
+<p><code>rambox.desktop</code> file at <code>~/.local/share/applications</code></p>
 </li>
 <li>
 <p>Icon</p>
@@ -213,7 +214,7 @@
 </ul>
 <ol>
 <li>
-<p>Move AppImage to <code>~/.local/bin</code> directory</p>
+<p>Move AppImage to <code>~/.local/bin</code> directory. For sake of tidyness.</p>
 </li>
 <li>
 <p>Make sure that AppImage is executable. Then run</p>
@@ -235,21 +236,20 @@
    Exec=~/.local/bin/Rambox.AppImage
 
    # Recommended
-   # Comment, AKA description. This will be used as tooltip
+   # Comment, AKA description. This will be shown as tooltip.
    Comment=All communication services in 1 place
    # The name of the icon that will be used to display this entry
    # This is not a path. Application icons should be copied to
-   #     .local/share/icons/hicolor/[Respective icon dimension]/apps
+   #     .local/share/icons/hicolor/[icon_dimension]/apps
    Icon=rambox
-   # Describes whether this application needs to be run in a terminal or not
-   #    set to true if need to launch program in terminal (such as htop, vim)
-   #    or want to read logs    
+   # Describes whether this application needs to be run in a terminal
+   #    set to true if need to launch program in terminal (such as htop,
+   #    vim) or want to read logs    
    Terminal=false
    # Describes the categories in which this entry should be shown
-   # Seperated using ;
-   # Examples: Internet;Network;Communication;Graphics;Programming;Sound;
-   #            Entertainment;Office;Games;Video;Python;Utility;
-   #             Language;Java;Rust;GTK;GNOME;KDE;
+   # Seperated using ';'
+   # For available categories, visit link below:
+   # https://specifications.freedesktop.org/menu-spec/latest/apa.html
    Categories=Communication;Internet;
 
    # Source: https://wiki.archlinux.org/index.php/Desktop_entries
@@ -261,27 +261,19 @@
 <h4><a class="header" href="#tutorial---semi-automated" id="tutorial---semi-automated">Tutorial - Semi-Automated</a></h4>
 <ol>
 <li>
-<p>Install <code>appimaged</code> as instructed on <a href="https://github.com/AppImage/appimaged#install">appimaged readme</a></p>
+<p>Install <code>appimaged</code> as instructed on <a href="https://github.com/AppImage/appimaged#install">appimaged readme</a> - Once</p>
 </li>
 <li>
-<p>Re-login.</p>
+<p>Re-login - Once</p>
 </li>
 <li>
-<p>Move every AppImage you downloaded to <code>~/.local/bin</code> or <code>~/Applications</code>.</p>
+<p>Move AppImage you downloaded to <code>~/.local/bin</code> or <code>~/Applications</code> - for every AppImage</p>
 </li>
 <li>
-<p>Enjoy </p>
+<p>Enjoy - Always :D</p>
 </li>
 </ol>
-<h4><a class="header" href="#thanks-to" id="thanks-to">Thanks to</a></h4>
-<ol>
-<li>
-<p>AppImage developers. It is awesome.</p>
-</li>
-<li>
-<p><a href="https://radical.town/@olivia/">Olivia Maia</a> for not being a freeloader and making research before asking a question. I learned <code>zenity</code> command from her. Be like Olivia.</p>
-</li>
-</ol>
+<p><strong>Thanks to everyone who worked on development of AppImage system. It is awesome</strong></p>
 <p>#appimage #software #linux</p>
 
                     </main>

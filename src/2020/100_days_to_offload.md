@@ -32,17 +32,46 @@ Here we go
    
    ![](./desktop-clock.png)
    
-   Note: I tested the script on 1366x768 display and defaults are good for such displays. Remember to change values if you have 
+   Note: I tested the script on 1366x768 display and defaults are good for such displays. Remember to change values if you have a monitor of different size or store wallpapers in somewhere else than default. 
 
-2. I tried Postfix for send-only email server. I didn't want to install a more feature rich email server for only sending announcement and password reset emails. But configuration is too complicated for me. Not to mention, using sub-domain instead of main-domain doesn't help to configure.
+2. I thought it would be better to send emails for my family members for them to set up their account on our shared OwnCloud instance. I tried Postfix since I  don't need a feature rich email server. But configuration is too complicated for me. Using a sub-domain instead of main-domain really puts me in a difficult position.
 
 ---
 
-##### Fizz
+##### 3 - Fizz
 
 1. I wanted to implement send-only email server to my OwnCloud instance [yesterday](#2). But it turs out, SMTP and Postfix stuff is way over my head. I will postpone it to later time.
    
    Not to mention, I am scared to break currently working system. I should try new things in a burner (testing) server first. And only after a succesfull prototype I should go ahead and do changes in main server.
    
    You probably knew that testing first would be a better idea. Guess what! I am a newbie who is just coming to these realizations.
+
 2. After a long time away from Java, I tried a simple program to see if I can still right something. I wrote a program that validates [ISBM-10](https://github.com/murtezayesil/student/tree/master/java/ISBNcheck/src/com/company) code.
+
+---
+
+##### 4
+
+I started to Computer Science degree on [OSSU](https://github.com/ossu/computer-science). You can start to CS degree during lockdown. All you have to the is to [follow this curriculum](https://ossu.firebaseapp.com/#/curriculum).
+
+---
+
+##### 5 - Buzz
+
+I decided to [Indieweb](https://indieweb.org/)[ify](https://indiewebify.me/) myself. But I am currently using [mdBook](https://rust-lang.github.io/mdBook/) to generate static online book from my posts to use my blog. This produces an amazingly fast and clean website. But it can be difficult to implement anything from outside. There are no plugins for mdBook like there are for bloging and CMS focused systems.  
+
+It is a difficult to chose a blogging system/platform when you have [over 100 choices](https://alternativeto.net/category/social/blogging/). Thankfully I have FOSS and static pages as my constrains to filter them down to about 20. I really am seeing the benefits of saying [no](https://www.williamury.com/books/the-power-of-a-positive-no/).
+
+After some more research, I am inclined towards [Known](https://withknown.com), thanks to its indieweb integration.
+
+---
+
+##### 6
+
+1. Still comparing [blogging solutions](#5---buzz). I have a new constrain to help me in my desicion. My blog will be static. I want it to run on [GitHub Pages](https://pages.github.com/) due to financial constrains. GitHub Pages is amazing for hosting a static website and costs nothing.
+   
+   But I don't mind using PHP powered CMS to generate static pages and then upload static pages to hosting.
+
+2. I wanted a landing page for a long time. In fact, having a landing page was driving force behind me purchasing this very domain, murtezayesil.me. Today, I started to do some testing and for the landing page and I forked [this template](https://github.com/flexdinesh/dev-landing-page). You can see my current progress [here](../test/dev-landing-page/index.html "Landing Page - Candidate 1").
+
+---

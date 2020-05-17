@@ -1,4 +1,4 @@
-# RSS
+# Feed
 
 I don't like sending mails and don't have a mailing list that I notify about new blog posts. If you really want to be notified about what I post, set an alarm ⏰️
 

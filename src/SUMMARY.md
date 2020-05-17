@@ -24,4 +24,4 @@
 [Archive](./archive.md)  
 [FAQ](./faq.md)  
 [Licence](./license.md)  
-[RSS](./rss.md)  
+[<i class="fa fa-rss"></i> Feed](./feed.md) 
