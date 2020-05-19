@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="home.html">Home</a></li><li class="chapter-item expanded affix "><a href="2020/100_days_to_offload.html">#100DaysToOffload</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="2020/April/personal_appimage_wiki.html"><strong aria-hidden="true">1.</strong> Personal AppImage Wiki</a></li><li class="chapter-item expanded "><a href="2020/April/learning_to_script.html"><strong aria-hidden="true">2.</strong> Learning to (Shell) Script</a></li><li class="chapter-item expanded "><a href="2020/April/continuity.html"><strong aria-hidden="true">3.</strong> Continuity</a></li><li class="chapter-item expanded "><a href="2020/April/dont_fear.tar.html"><strong aria-hidden="true">4.</strong> don't_fear.tar</a></li><li class="chapter-item expanded "><a href="2020/March/i_want_to_blog.html"><strong aria-hidden="true">5.</strong> I want to blog</a></li><li class="chapter-item expanded "><a href="2020/March/multiple_source_files.html"><strong aria-hidden="true">6.</strong> Rust - Multiple source files</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="about.html">About</a></li><li class="chapter-item expanded affix "><a href="archive.html">Archive</a></li><li class="chapter-item expanded affix "><a href="faq.html">FAQ</a></li><li class="chapter-item expanded affix "><a href="license.html">Licence</a></li><li class="chapter-item expanded affix "><a href="feed.html">Feed</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="home.html">Home</a></li><li class="chapter-item expanded affix "><a href="2020/100_days_to_offload.html">#100DaysToOffload</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="2020/May/hello_linux.html"><strong aria-hidden="true">1.</strong> Hello, Linux!</a></li><li class="chapter-item expanded "><a href="2020/April/personal_appimage_wiki.html"><strong aria-hidden="true">2.</strong> Personal AppImage Wiki</a></li><li class="chapter-item expanded "><a href="2020/April/learning_to_script.html"><strong aria-hidden="true">3.</strong> Learning to (Shell) Script</a></li><li class="chapter-item expanded "><a href="2020/April/continuity.html"><strong aria-hidden="true">4.</strong> Continuity</a></li><li class="chapter-item expanded "><a href="2020/April/dont_fear.tar.html"><strong aria-hidden="true">5.</strong> don't_fear.tar</a></li><li class="chapter-item expanded "><a href="2020/March/i_want_to_blog.html"><strong aria-hidden="true">6.</strong> I want to blog</a></li><li class="chapter-item expanded "><a href="2020/March/multiple_source_files.html"><strong aria-hidden="true">7.</strong> Rust - Multiple source files</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="about.html">About</a></li><li class="chapter-item expanded affix "><a href="faq.html">FAQ</a></li><li class="chapter-item expanded affix "><a href="license.html">Licence</a></li><li class="chapter-item expanded affix "><a href="feed.html">Feed</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -155,6 +155,9 @@
 <hr />
 <ul>
 <li>
+<p><a href="./2020/May/hello_linux.html">Hello, Linux!</a></p>
+</li>
+<li>
 <p><a href="./2020/April/personal_appimage_wiki.html">Personal AppImage Wiki</a></p>
 </li>
 <li>
@@ -167,7 +170,7 @@
 <p><a href="./2020/April/dont_fear.tar.html">don't_fear.tar</a></p>
 </li>
 <li>
-<p><a href="./2020/March/i_want_to_blog.html">I want to blog</a></p>
+<p><a href="2020/March/i_want_to_blog.html">I want to blog</a></p>
 </li>
 <li>
 <p><a href="./2020/March/multiple_source_files.html">Rust - Multiple source files</a></p>
@@ -175,7 +178,6 @@
 </ul>
 <hr />
 <p><a href="./about.html">About</a><br />
-<a href="./archive.html">Archive</a><br />
 <a href="./faq.html">FAQ</a><br />
 <a href="./license.html">Licence</a><br />
 <a href="./feed.html"><i class="fa fa-rss"></i> Feed</a> </p>
@@ -240,10 +242,54 @@
 <p>But I don't mind using PHP powered CMS to generate static pages and then upload static pages to hosting.</p>
 </li>
 <li>
-<p>I wanted a landing page for a long time. In fact, having a landing page was driving force behind me purchasing this very domain, murtezayesil.me. Today, I started to do some testing and for the landing page and I forked <a href="https://github.com/flexdinesh/dev-landing-page">this template</a>. You can see my current progress <a href="2020/../test/dev-landing-page/index.html" title="Landing Page - Candidate 1">here</a>.</p>
+<p>I wanted a landing page for a long time. In fact, having a landing page was driving force behind me purchasing this very domain, murtezayesil.me. Today, I started to do some testing and for the landing page and I forked <a href="https://github.com/flexdinesh/dev-landing-page">this template</a>. You can see my current progress <a href="2020/../landing-page/candidate1/index.html" title="Landing Page - Candidate 1">here</a>.</p>
 </li>
 </ol>
 <hr />
+<h5><a class="header" href="#7" id="7">7</a></h5>
+<ol>
+<li>
+<p>Wrote <a href="2020/./2020/May/hello_linux.html">Hello, Linux!</a></p>
+</li>
+<li>
+<p>Today I noticed that mdbook only generates HTML pages from pages linked in SUMMARY.md (in sidebar). So, when I move a link form sidebar to archive, that page will be removed form blog 😞️</p>
+<p>This will force me to move away from mdbook. Mdbook was not meant to be a blog generator anyway.</p>
+</li>
+</ol>
+<hr />
+<h1><a class="header" href="#hello-linux" id="hello-linux">Hello, Linux!</a></h1>
+<p>I previously wrote about <a href="2020/May/../April/dont_fear.tar.html">my attempt to LFS</a>. But I didn't start using Linux after compiling the kernel, oh no. I meet Linux when I was 9th grade years old, around 2010 I believe. As a member of Project Club, I had opportunity to go to Ankara to visit Science Fair by TÜBİTAK, Scientific &amp; Technological Research Council of Turkey. I purchased an issue of the Science Technic magazine but I was more drown to CD that came with it. It was an installer for <a href="https://distrowatch.com/table.php?distribution=pardus">Pardus</a> distro.</p>
+<p>Pardus shipped with KDE at the time and it was too heavy for our family laptop. 1.6GHz single core CPU was bottlenecked by 512MiB RAM. KDE wasn't very optimized and it was a laptop, QT didn't benefit from any kind of GPU acceleration. But Pardus had one thing that made us stick to it till that laptop never boot. WiFi and Speaker support out of the box 🎉️ Remember, only other OS I used and knew was Windows XP. And its &quot;out of the box&quot; support was limited to CD reader, USB mouse/keyboard. XP couldn't even play audio without a driver. That laptop lived till mid 2012 and it was ~7 years old when it died.</p>
+<p>Fast forward to 2017, I needed a laptop for practicing C Language at hostel. I felt it was necessary to make the purchase because Turbo C++ compiler on DosBox was cumbersome at best and straight out broken at times. I settled for Lenovo Ideapad 110 which I am using right now. It has 4 CPU cores at 2.2GHz and integrated GPU for $400. It didn't have a preinstalled OS. I had to install an OS that I could afford. Because I knew about Linux, I tried Ubuntu. Graphical installer was easy to use and every single thing on the device (including microphone and bluetooth) worked flawlessly out of the box. I didn't need to open a single terminal to install the OS. After OS installation, I installed an IDE for C coding. Everything needed was installed along with it. The best thing is I wasn't hunting some executable in the internet. Today I know that every program Linux users install are tested by the developers of the OS they are using. Using Software Center/Package manager meant I was only getting software from trusted first parties, not from shady websites. This is one of the many reasons Linux is safer.</p>
+<blockquote>
+<p>I don't know why people say Linux is difficult. Everthing worked for me out of the box.</p>
+</blockquote>
+<blockquote>
+<p>Installing programs from Software Center means you are only installing from trusted developers. Not from shady corners of the internet.</p>
+</blockquote>
+<p>After some time, I got an itch. I was feeling adventurous and wanted re-install everything with better partitioning. I learned that using entire 1TiB of HDD as root directory (annoted as / [slash] ) was not the best way to organize data. I wanted to make more partitions and try other distro options.</p>
+<p>Next I installed Kubuntu. I didn't like KDE and uninstalled kubuntu-... package. I uninstalled something called Xorg in the process. As it turns out, Xorg is the program that uses GPU to provide a GUI, so that I can use browser and IDE.</p>
+<p>Next, I installed Linux Mint 17. It was beautiful. Worked OK but I couldn't stick to it for some reason. I wanted to try something outside the Debian family.</p>
+<p>I went Arch. This was like and overdose of Linux for me 😵️ It lived for about a week or so. I broke my system very fast. I can't blame Arch. I was amateur.</p>
+<p>PopOS announced that they were gonna ship their own OS. I was annoyed with needing to do major updates every 6 months. After considering between Solus and Manjaro I went Solus. You can guess why not Manjaro 😜️</p>
+<p>Solus (3.999) had 2 issues. After every update system would boot to Black Screen instead of Login screen. I had to manually boot into LTS kernel and reboot. Solus is a Rolling Release distro. In other words, I would have black screen issue multiple times a week. ... Then steam broke. This was the last drop. I hopped to Manjaro.</p>
+<p>Manjaro is like stable Arch for an amateur like me. It was amazing and I used it for months. But Valve Proton support wasn't as good as on Ubuntu side.</p>
+<p>Later I moved to Elementary OS. It is beautiful. Not only on appearance but in system resource usage too. It was freaking fast and light compared to my previous experiences with Linux Mint and Manjaro. I later heard that Linux Mint 19 offered much better optimized OS. I hopped.</p>
+<p>About 2 months ago I switched to Linux Mint 19. Elementary is still installed along side it. But I never boot Elementary. Don't need to. I have my Rust coding environment in Mint. Why would I want to hop...</p>
+<blockquote>
+<p>You are all caught up</p>
+</blockquote>
+<p>Wait a minute. Solus Budgie seems to be working amazingly well for other people. I may install it in place of Elementary and ....</p>
+<p>You see the cycle? I don't distro hop because I need to, at least not all the time, but because it is an adventure.</p>
+<hr />
+<p>After trying many OSes, I decided to make an opinion based table according to their out-of-the-box state. Of course every distro offers an amaing level of customizability! So, there is no perfect distro. They are all amazing.</p>
+<table><thead><tr><th align="right">Scored / 5</th><th align="center">Aesthetics</th><th align="center">Familiarity<br/>to Windows switchers</th><th align="center">Simplicity</th><th align="center">System Resource<br/>Usage</th></tr></thead><tbody>
+<tr><td align="right">Elementary<br/>5.1</td><td align="center">5</td><td align="center">1</td><td align="center">5</td><td align="center">5</td></tr>
+<tr><td align="right">Manjaro<br/>KDE (2019)</td><td align="center">3</td><td align="center">5</td><td align="center">3</td><td align="center">4</td></tr>
+<tr><td align="right">Mint<br/>Cinnamon 19</td><td align="center">4</td><td align="center">5</td><td align="center">4</td><td align="center">4</td></tr>
+<tr><td align="right">Solus<br/>Budgie (2018)</td><td align="center">4</td><td align="center">4</td><td align="center">4</td><td align="center">3</td></tr>
+<tr><td align="right">Ubuntu<br/>GNOME 18.04</td><td align="center">5</td><td align="center">1</td><td align="center">3</td><td align="center">2</td></tr>
+</tbody></table>
 <h1><a class="header" href="#appimage-is-great" id="appimage-is-great">AppImage is great</a></h1>
 <p>If you distro hop a lot, you should know it can be daunting to setup your workflow <em>again</em> after a hype powered hop. It can be even more frustrating if packages you need are not available in local repo or require compiling. Compiling isn't really a bad thing or frustrating, but it can take long time. Let me introduce [drums ...] AppImage 🎉️. This beauty has everyting in it and it is cross-distro.</p>
 <p><strong>Fun Fact</strong>: Apple have been using AppImage like technology for years. If you used a Mac PC*, you probably downloaded <code>.dmg</code> (disk image) files to install programs which are not available on App Store. Programs in <code>.dmg</code> can be run without installing. Installing them is as simple as moving them to Applications directory.</p>
@@ -435,12 +481,12 @@ color=`xclip -o` &amp;&amp; xlogo -fg $color -bg $color
 <h2><a class="header" href="#what-are-tarballs" id="what-are-tarballs">What are tarballs?</a></h2>
 <p>A tarball (or tarbomb) is nothing but a <a href="https://en.wikipedia.org/wiki/Tar_(computing)" title="Read on Wikipedia">.tar</a> file. It is called tarball because it causes an explosion of files wherever it is unpacked.</p>
 <p>Name comes from &quot;Tape ARchieve&quot; because it has no indexing to allow random access to file. Reading a file in a tarball means also reading everything until that file, just like a tape. It is not suitable for reading individual files in a large archieve.</p>
-<p>It has no compression capability but everything in a tarball can be easily compressed by compressing tarball itself. Tarball will have .tar.gz extension if it is compressed with gzip algorithm.</p>
+<p>It has no compression capability but everything in a tarball can be easily compressed by compressing tarball itself. Tarball will have .tar.gz extension if it is compressed with gzip algorithm for instance.</p>
 <h2><a class="header" href="#why-use-tarballs" id="why-use-tarballs">Why use tarballs?</a></h2>
 <p>They are like suitcases 💼️. We can put so many tiny files 📄️ into 1 file to make distribution, carrying, compression, and archieving easier. GitHub produces a tarball and a zip file of the git repository with every release.</p>
 <p>Plain text files can be compressed further to take extremely small space while carrying so much data or code. I recommend tar.gz over zip every day of the week.</p>
 <h1><a class="header" href="#why-build-linux-from-scratch-" id="why-build-linux-from-scratch-">Why build Linux From Scratch ?</a></h1>
-<p>I wanted to have much better understanding of Linux file structure and know where everyhting (headers, libraries, binaries, configurations etc.) goes. I believed that would be important since I wanted to become a SysAdmin. I ended up scratching the surface.</p>
+<p>I wanted to have much better understanding of Linux file structure and know where everyhting (headers, libraries, binaries, configurations, device files etc.) goes. I believed that would be important since I wanted to become a SysAdmin. I ended up scratching the surface.</p>
 <h2><a class="header" href="#short-story" id="short-story">Short Story</a></h2>
 <p>I initially used my old Sony VAIO laptop to build a 32bit LFS system. I was handicapped with current 32bit support. I tried my luck on my 64bit Lenovo laptop. There were no headaches until I wasn't able to boot due to UEFI. I probably could if I compiled more of the dependencies for UEFI support for GRUB. But since my main goal was learning </p>
 <h2><a class="header" href="#long-story" id="long-story">Long Story</a></h2>
@@ -556,7 +602,6 @@ https://mastodon.social/@murteza_y</p>
 <a href="https://fosstodon.org">Fosstodon</a> :
 @murtezayesil@fosstodon.org<br />
 https://fosstodon.org/@murtezayesil</p>
-<h1><a class="header" href="#archive" id="archive">Archive</a></h1>
 <h1><a class="header" href="#faq" id="faq">FAQ</a></h1>
 <h4><a class="header" href="#this-blog-looks-great--which-cms-and-theme-do-you-use" id="this-blog-looks-great--which-cms-and-theme-do-you-use">This blog looks great 🙂️ Which CMS and theme do you use?</a></h4>
 <p>This blog is written in <a href="faq.html#markdown">MarkDown</a>. Pages are generated from markdown by <a href="https://github.com/rust-lang/mdbook"><em>mdBook</em></a>.</p>

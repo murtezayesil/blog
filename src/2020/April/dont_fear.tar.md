@@ -14,7 +14,7 @@ A tarball (or tarbomb) is nothing but a [.tar](https://en.wikipedia.org/wiki/Tar
 
 Name comes from "Tape ARchieve" because it has no indexing to allow random access to file. Reading a file in a tarball means also reading everything until that file, just like a tape. It is not suitable for reading individual files in a large archieve.  
 
-It has no compression capability but everything in a tarball can be easily compressed by compressing tarball itself. Tarball will have .tar.gz extension if it is compressed with gzip algorithm.
+It has no compression capability but everything in a tarball can be easily compressed by compressing tarball itself. Tarball will have .tar.gz extension if it is compressed with gzip algorithm for instance.
 
 ## Why use tarballs?
 
@@ -24,7 +24,7 @@ Plain text files can be compressed further to take extremely small space while c
 
 # Why build Linux From Scratch ?
 
-I wanted to have much better understanding of Linux file structure and know where everyhting (headers, libraries, binaries, configurations etc.) goes. I believed that would be important since I wanted to become a SysAdmin. I ended up scratching the surface.
+I wanted to have much better understanding of Linux file structure and know where everyhting (headers, libraries, binaries, configurations, device files etc.) goes. I believed that would be important since I wanted to become a SysAdmin. I ended up scratching the surface.
 
 ## Short Story
 

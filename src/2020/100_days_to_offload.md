@@ -72,6 +72,16 @@ After some more research, I am inclined towards [Known](https://withknown.com), 
    
    But I don't mind using PHP powered CMS to generate static pages and then upload static pages to hosting.
 
-2. I wanted a landing page for a long time. In fact, having a landing page was driving force behind me purchasing this very domain, murtezayesil.me. Today, I started to do some testing and for the landing page and I forked [this template](https://github.com/flexdinesh/dev-landing-page). You can see my current progress [here](../test/dev-landing-page/index.html "Landing Page - Candidate 1").
+2. I wanted a landing page for a long time. In fact, having a landing page was driving force behind me purchasing this very domain, murtezayesil.me. Today, I started to do some testing and for the landing page and I forked [this template](https://github.com/flexdinesh/dev-landing-page). You can see my current progress [here](../landing-page/candidate1/index.html "Landing Page - Candidate 1").
+
+---
+
+##### 7
+
+1. Wrote [Hello, Linux!](./2020/May/hello_linux.md)
+
+2. Today I noticed that mdbook only generates HTML pages from pages linked in SUMMARY.md (in sidebar). So, when I move a link form sidebar to archive, that page will be removed form blog 😞️
+   
+   This will force me to move away from mdbook. Mdbook was not meant to be a blog generator anyway.
 
 ---
