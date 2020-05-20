@@ -78,7 +78,7 @@ After some more research, I am inclined towards [Known](https://withknown.com), 
 
 ##### 7
 
-1. Wrote [Hello, Linux!](./2020/May/hello_linux.md)
+1. Wrote [Hello, Linux!](./May/hello_linux.md)
 
 2. Today I noticed that mdbook only generates HTML pages from pages linked in SUMMARY.md (in sidebar). So, when I move a link form sidebar to archive, that page will be removed form blog 😞️
    
