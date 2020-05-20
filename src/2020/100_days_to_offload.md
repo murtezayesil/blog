@@ -85,3 +85,15 @@ After some more research, I am inclined towards [Known](https://withknown.com), 
    This will force me to move away from mdbook. Mdbook was not meant to be a blog generator anyway.
 
 ---
+
+##### 8
+
+I am trying Publii to see if it is a good replacement for my blog  workflow. But it doesn't seem to support md files. I don't want to format everything in Publii's Rich Text Format editor. I also didn't see an option to exporting posts to md. I would like to use md because most blogging platforms has md support. Publii is the only exception in my experience.
+
+---
+
+##### 9
+
+I want to know Publii better. So, I wrote [Collaborative Challenges Club](https://collaborativechallenges.club)'s first challenge in Publii. Publii has few quirks but it is ok for the most part. This will also be the my chance to write a report for the [blog platforms review challenge](https://collaborativechallenges.club/blogging-platform-review-contribute.html) on there.
+
+---
