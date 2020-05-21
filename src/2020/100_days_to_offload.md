@@ -66,7 +66,7 @@ After some more research, I am inclined towards [Known](https://withknown.com), 
 
 ---
 
-##### 6
+##### 6 - Fizz
 
 1. Still comparing [blogging solutions](#5---buzz). I have a new constrain to help me in my desicion. My blog will be static. I want it to run on [GitHub Pages](https://pages.github.com/) due to financial constrains. GitHub Pages is amazing for hosting a static website and costs nothing.
    
@@ -92,8 +92,14 @@ I am trying Publii to see if it is a good replacement for my blog  workflow. But
 
 ---
 
-##### 9
+##### 9 - Fizz
 
 I want to know Publii better. So, I wrote [Collaborative Challenges Club](https://collaborativechallenges.club)'s first challenge in Publii. Publii has few quirks but it is ok for the most part. This will also be the my chance to write a report for the [blog platforms review challenge](https://collaborativechallenges.club/blogging-platform-review-contribute.html) on there.
+
+---
+
+##### 10 - Buzz
+
+Today is "I don't know what I am doing" day and I am gonna live it to hightest.
 
 ---
